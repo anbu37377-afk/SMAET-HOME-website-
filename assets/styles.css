@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --tech-blue: #3b82f6;
+  --smart-gray: #6b7280;
+  --accent-teal: #14b8a6;
+  --soft-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  color: #0f172a;
+  background-color: #ffffff;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.68);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  backdrop-filter: blur(14px);
+  box-shadow: var(--soft-shadow);
+}
+
+.soft-shadow {
+  box-shadow: var(--soft-shadow);
+}
+
+.accent-border {
+  border: 1px solid rgba(20, 184, 166, 0.4);
+}
+
+.before-after {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.before-after img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.before-after .after-image {
+  position: absolute;
+  inset: 0;
+  width: 50%;
+  overflow: hidden;
+}
+
+.before-after .divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #14b8a6;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.before-after input[type="range"] {
+  width: 100%;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  color: #0f172a;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  box-shadow: var(--soft-shadow);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  width: 220px;
+  font-size: 0.85rem;
+}
+
+.group:hover .tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-6px);
+}
+
+[data-animate] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-animate].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 50;
+}
+
+.modal-content {
+  width: min(520px, 100%);
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: var(--soft-shadow);
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  background: rgba(59, 130, 246, 0.08);
+  color: #1e3a8a;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.dark body {
+  background-color: #0b1120;
+  color: #e2e8f0;
+}
+
+.dark .bg-white {
+  background-color: #0f172a !important;
+}
+
+.dark .bg-slate-50 {
+  background-color: #111827 !important;
+}
+
+.dark .text-slate-900 {
+  color: #f8fafc !important;
+}
+
+.dark .text-slate-700 {
+  color: #e2e8f0 !important;
+}
+
+.dark .text-slate-600 {
+  color: #cbd5e1 !important;
+}
+
+.dark .text-slate-500 {
+  color: #94a3b8 !important;
+}
+
+.dark .text-slate-400 {
+  color: #94a3b8 !important;
+}
+
+.dark .text-blue-600 {
+  color: #93c5fd !important;
+}
+
+.dark .text-blue-700 {
+  color: #bfdbfe !important;
+}
+
+.dark .text-blue-800 {
+  color: #e0f2fe !important;
+}
+
+.dark .text-blue-100 {
+  color: #dbeafe !important;
+}
+
+.dark .text-teal-600 {
+  color: #5eead4 !important;
+}
+
+.dark .text-teal-500 {
+  color: #5eead4 !important;
+}
+
+.dark .text-white {
+  color: #f8fafc !important;
+}
+
+.dark input,
+.dark textarea,
+.dark select {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  border-color: #334155;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #94a3b8;
+}
+
+.dark .bg-blue-50 {
+  background-color: rgba(30, 58, 138, 0.25) !important;
+}
+
+.dark .bg-blue-600 {
+  background-color: #2563eb !important;
+}
+
+.dark .bg-teal-500 {
+  background-color: #14b8a6 !important;
+}
+
+.dark .border-slate-100 {
+  border-color: #1f2937 !important;
+}
+
+.dark .border-slate-200 {
+  border-color: #334155 !important;
+}
+
+.dark .soft-shadow {
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+}
+
+.dark .glass-card {
+  background: rgba(15, 23, 42, 0.7);
+  border-color: rgba(148, 163, 184, 0.2);
+}
+
+.dark .tag {
+  background: rgba(59, 130, 246, 0.2);
+  color: #bfdbfe;
+  border-color: rgba(59, 130, 246, 0.35);
+}
+
+.dark .tooltip {
+  background: #0f172a;
+  color: #e2e8f0;
+  border-color: rgba(148, 163, 184, 0.2);
+}
+
+.dark header,
+.dark header a,
+.dark header button,
+.dark header span,
+.dark header svg {
+  color: #000000 !important;
+}
+
+.dark header {
+  background-color: #0f172a !important;
+}
+
+.dark header .bg-white {
+  background-color: #0f172a !important;
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechNest Solutions | Blog</title>
+    <meta
+      name="description"
+      content="Read smart home installation tips and product insights from TechNest."
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="text-slate-900">
+    <header class="bg-white/90 backdrop-blur lg:sticky lg:top-0 z-40">
+      <div
+        class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between"
+      >
+        <a href="index.html" class="flex items-center gap-2">
+          <span class="text-xl font-semibold text-blue-600">TechNest</span>
+          <span class="text-sm text-slate-500">Solutions</span>
+        </a>
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-medium">
+          <a href="index.html" class="text-slate-600 hover:text-blue-600"
+            >Home</a
+          >
+          <a href="home2.html" class="text-slate-600 hover:text-blue-600"
+            >Home 2</a
+          >
+          <a href="about.html" class="text-slate-600 hover:text-blue-600"
+            >About</a
+          >
+          <a href="services.html" class="text-slate-600 hover:text-blue-600"
+            >Services</a
+          >
+          <a href="pricing.html" class="text-slate-600 hover:text-blue-600"
+            >Pricing</a
+          >
+          <a href="blog.html" class="text-blue-600">Blog</a>
+          <a href="contact.html" class="text-slate-600 hover:text-blue-600"
+            >Contact</a
+          >
+          <a
+            href="dashboard.html"
+            class="px-4 py-2 rounded-full border border-slate-200 text-sm font-semibold text-slate-600 hover:border-blue-600 hover:text-blue-600 transition"
+            >Dashboard</a
+          >
+          <a
+            href="login.html"
+            class="px-4 py-2 rounded-full bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700 transition"
+            >Login</a
+          >
+          <a
+            href="login.html#register"
+            class="px-4 py-2 rounded-full bg-teal-500 text-white text-sm font-semibold hover:bg-teal-600 transition"
+            >Register</a
+          >
+        </nav>
+        <div class="flex items-center gap-3">
+          <button
+            class="rounded-full border border-slate-200 p-2 text-slate-600 hover:border-blue-600 hover:text-blue-600 transition"
+            data-theme-toggle
+            aria-label="Toggle dark mode"
+            aria-pressed="false"
+          >
+            🌙
+          </button>
+          <button
+            class="lg:hidden rounded-full border border-slate-200 p-2"
+            data-nav-toggle
+            aria-label="Open menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-slate-700"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        class="lg:hidden hidden border-t border-slate-100 bg-white"
+        data-mobile-nav
+      >
+        <div class="px-6 py-4 flex flex-col gap-4 text-sm font-medium">
+          <a href="index.html">Home</a>
+          <a href="home2.html">Home 2</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="blog.html" class="text-blue-600">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a
+            href="dashboard.html"
+            class="w-full text-center px-4 py-2 rounded-full border border-slate-200"
+            >Dashboard</a
+          >
+          <a
+            href="login.html"
+            class="w-full text-center px-4 py-2 rounded-full bg-blue-600 text-white"
+            >Login</a
+          >
+          <a
+            href="login.html#register"
+            class="w-full text-center px-4 py-2 rounded-full bg-teal-500 text-white"
+            >Register</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="py-16 sm:py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-2xl mx-auto space-y-4" data-animate>
+            <span class="tag">TechNest Insights</span>
+            <h1 class="text-4xl font-semibold">Smart Home Knowledge Hub</h1>
+            <p class="text-slate-600">
+              Installation guides, product comparisons, and automation tips.
+            </p>
+          </div>
+          <div
+            class="mt-10 flex flex-col lg:flex-row gap-4 items-center justify-between"
+            data-animate
+          >
+            <div class="w-full lg:w-1/2">
+              <input
+                type="search"
+                placeholder="Search articles"
+                class="w-full px-4 py-3 rounded-full border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-200"
+              />
+            </div>
+            <div class="flex flex-wrap gap-3 text-sm font-medium text-slate-600">
+              <button class="px-4 py-2 rounded-full border">All</button>
+              <button class="px-4 py-2 rounded-full border">Installation</button>
+              <button class="px-4 py-2 rounded-full border">Security</button>
+              <button class="px-4 py-2 rounded-full border">Lighting</button>
+            </div>
+          </div>
+          <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <a
+              href="blog-details.html"
+              class="bg-white rounded-2xl soft-shadow overflow-hidden mx-auto"
+              data-animate
+            >
+              <img
+                src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=900&q=80"
+                alt="Smart home guide"
+                class="h-44 w-full object-cover"
+              />
+              <div class="p-5 space-y-2">
+                <p class="text-xs uppercase text-slate-400">6 min read</p>
+                <h3 class="font-semibold">
+                  5 Steps to a Secure Smart Home Setup
+                </h3>
+                <div class="flex gap-2 text-xs text-blue-600">
+                  <span>#Security</span>
+                  <span>#Installation</span>
+                </div>
+              </div>
+            </a>
+            <a
+              href="blog-details.html"
+              class="bg-white rounded-2xl soft-shadow overflow-hidden mx-auto"
+              data-animate
+            >
+              <img
+                src="https://images.unsplash.com/photo-1505798577917-a65157d3320f?auto=format&fit=crop&w=900&q=80"
+                alt="Lighting automation"
+                class="h-44 w-full object-cover"
+              />
+              <div class="p-5 space-y-2">
+                <p class="text-xs uppercase text-slate-400">4 min read</p>
+                <h3 class="font-semibold">
+                  Lighting Scenes That Save Energy
+                </h3>
+                <div class="flex gap-2 text-xs text-blue-600">
+                  <span>#Lighting</span>
+                  <span>#Tips</span>
+                </div>
+              </div>
+            </a>
+            <a
+              href="blog-details.html"
+              class="bg-white rounded-2xl soft-shadow overflow-hidden mx-auto"
+              data-animate
+            >
+              <img
+                src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=900&q=80"
+                alt="Product comparison"
+                class="h-44 w-full object-cover"
+              />
+              <div class="p-5 space-y-2">
+                <p class="text-xs uppercase text-slate-400">7 min read</p>
+                <h3 class="font-semibold">
+                  Google Home vs Alexa: What to Choose?
+                </h3>
+                <div class="flex gap-2 text-xs text-blue-600">
+                  <span>#Comparison</span>
+                  <span>#Devices</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-white border-t border-slate-100">
+      <div
+        class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid gap-6 lg:grid-cols-3 text-sm"
+      >
+        <div class="space-y-3">
+          <p class="font-semibold text-blue-600">TechNest Solutions</p>
+          <p class="text-slate-600">
+            Explore smart home guidance from certified experts.
+          </p>
+        </div>
+        <div class="space-y-2 text-slate-600">
+          <p class="font-semibold text-slate-700">Categories</p>
+          <p>Security</p>
+          <p>Automation</p>
+          <p>Product Comparisons</p>
+        </div>
+        <div class="space-y-2 text-slate-600">
+          <p class="font-semibold text-slate-700">Reach Out</p>
+          <p>blog@technest.in</p>
+          <p>+91 90000 87654</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/main.js"></script>
+  </body>
+</html>

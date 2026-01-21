@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechNest Portal | Login</title>
+    <meta
+      name="description"
+      content="Access the TechNest service appointment portal."
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-slate-50 flex items-center justify-center">
+    <main class="w-full px-4">
+      <div
+        class="glass-card rounded-3xl p-8 sm:p-10 max-w-md mx-auto text-center space-y-6"
+      >
+        <div class="flex items-center justify-between">
+          <a href="index.html" class="inline-flex items-center gap-2">
+            <span class="text-xl font-semibold text-blue-600">TechNest</span>
+            <span class="text-sm text-slate-500">Solutions</span>
+          </a>
+          <button
+            class="rounded-full border border-slate-200 p-2 text-slate-600 hover:border-blue-600 hover:text-blue-600 transition"
+            data-theme-toggle
+            aria-label="Toggle dark mode"
+            aria-pressed="false"
+          >
+            🌙
+          </button>
+        </div>
+        <p class="text-slate-600 text-sm">
+          Service appointment portal access
+        </p>
+        <div class="flex rounded-full bg-slate-100 p-1 text-sm font-semibold">
+          <button
+            class="flex-1 py-2 rounded-full bg-blue-600 text-white"
+            data-auth-toggle="login"
+          >
+            Login
+          </button>
+          <button
+            class="flex-1 py-2 rounded-full text-slate-600"
+            data-auth-toggle="register"
+          >
+            Register
+          </button>
+        </div>
+        <div class="space-y-4 text-left" data-auth-login>
+          <input
+            type="email"
+            placeholder="Email address"
+            class="w-full px-4 py-3 rounded-full border border-slate-200"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            class="w-full px-4 py-3 rounded-full border border-slate-200"
+          />
+          <button
+            class="w-full py-3 rounded-full bg-blue-600 text-white text-sm font-semibold"
+          >
+            Access Portal
+          </button>
+          <p class="text-xs text-slate-500 text-center">
+            Need help? Contact SmartCare support 24/7.
+          </p>
+        </div>
+        <div class="space-y-4 text-left hidden" data-auth-register>
+          <input
+            type="text"
+            placeholder="Full name"
+            class="w-full px-4 py-3 rounded-full border border-slate-200"
+          />
+          <input
+            type="email"
+            placeholder="Email address"
+            class="w-full px-4 py-3 rounded-full border border-slate-200"
+          />
+          <input
+            type="password"
+            placeholder="Create password"
+            class="w-full px-4 py-3 rounded-full border border-slate-200"
+          />
+          <button
+            class="w-full py-3 rounded-full bg-blue-600 text-white text-sm font-semibold"
+          >
+            Create Account
+          </button>
+          <p class="text-xs text-slate-500 text-center">
+            By registering, you agree to TechNest terms.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/main.js"></script>
+  </body>
+</html>

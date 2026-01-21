@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact TechNest Solutions</title>
+    <meta
+      name="description"
+      content="Book a free smart home consultation with TechNest Solutions."
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="text-slate-900">
+    <header class="bg-white/90 backdrop-blur lg:sticky lg:top-0 z-40">
+      <div
+        class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between"
+      >
+        <a href="index.html" class="flex items-center gap-2">
+          <span class="text-xl font-semibold text-blue-600">TechNest</span>
+          <span class="text-sm text-slate-500">Solutions</span>
+        </a>
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-medium">
+          <a href="index.html" class="text-slate-600 hover:text-blue-600"
+            >Home</a
+          >
+          <a href="home2.html" class="text-slate-600 hover:text-blue-600"
+            >Home 2</a
+          >
+          <a href="about.html" class="text-slate-600 hover:text-blue-600"
+            >About</a
+          >
+          <a href="services.html" class="text-slate-600 hover:text-blue-600"
+            >Services</a
+          >
+          <a href="pricing.html" class="text-slate-600 hover:text-blue-600"
+            >Pricing</a
+          >
+          <a href="blog.html" class="text-slate-600 hover:text-blue-600">Blog</a>
+          <a href="contact.html" class="text-blue-600">Contact</a>
+          <a
+            href="dashboard.html"
+            class="px-4 py-2 rounded-full border border-slate-200 text-sm font-semibold text-slate-600 hover:border-blue-600 hover:text-blue-600 transition"
+            >Dashboard</a
+          >
+          <a
+            href="login.html"
+            class="px-4 py-2 rounded-full bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700 transition"
+            >Login</a
+          >
+          <a
+            href="login.html#register"
+            class="px-4 py-2 rounded-full bg-teal-500 text-white text-sm font-semibold hover:bg-teal-600 transition"
+            >Register</a
+          >
+        </nav>
+        <div class="flex items-center gap-3">
+          <button
+            class="rounded-full border border-slate-200 p-2 text-slate-600 hover:border-blue-600 hover:text-blue-600 transition"
+            data-theme-toggle
+            aria-label="Toggle dark mode"
+            aria-pressed="false"
+          >
+            🌙
+          </button>
+          <button
+            class="lg:hidden rounded-full border border-slate-200 p-2"
+            data-nav-toggle
+            aria-label="Open menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-slate-700"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        class="lg:hidden hidden border-t border-slate-100 bg-white"
+        data-mobile-nav
+      >
+        <div class="px-6 py-4 flex flex-col gap-4 text-sm font-medium">
+          <a href="index.html">Home</a>
+          <a href="home2.html">Home 2</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html" class="text-blue-600">Contact</a>
+          <a
+            href="dashboard.html"
+            class="w-full text-center px-4 py-2 rounded-full border border-slate-200"
+            >Dashboard</a
+          >
+          <a
+            href="login.html"
+            class="w-full text-center px-4 py-2 rounded-full bg-blue-600 text-white"
+            >Login</a
+          >
+          <a
+            href="login.html#register"
+            class="w-full text-center px-4 py-2 rounded-full bg-teal-500 text-white"
+            >Register</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="py-16 sm:py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-10 lg:grid-cols-2">
+          <div class="space-y-6" data-animate>
+            <span class="tag">Free Consultation</span>
+            <h1 class="text-4xl font-semibold">Let's design your smart home</h1>
+            <p class="text-slate-600">
+              Share your requirements and TechNest will deliver a custom smart
+              home plan with certified installation support.
+            </p>
+            <div class="space-y-4 text-sm text-slate-600">
+              <p><strong>Phone:</strong> +91 90000 11111</p>
+              <p><strong>Email:</strong> connect@technest.in</p>
+              <p><strong>WhatsApp:</strong> +91 90000 22222</p>
+            </div>
+            <div class="bg-slate-50 rounded-2xl p-6 soft-shadow space-y-3">
+              <p class="font-semibold">Service Area Checker</p>
+              <form class="space-y-3" data-area-form>
+                <input
+                  type="text"
+                  placeholder="Enter your city"
+                  class="w-full px-4 py-3 rounded-full border border-slate-200"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="w-full py-3 rounded-full bg-blue-600 text-white text-sm font-semibold"
+                >
+                  Check Availability
+                </button>
+                <p class="text-sm text-slate-600" data-area-result>
+                  We currently service major metro cities across India.
+                </p>
+              </form>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <span class="tag">ISO Certified</span>
+              <span class="tag">Verified Technicians</span>
+              <span class="tag">Secure Install</span>
+            </div>
+          </div>
+          <div class="bg-white rounded-3xl soft-shadow p-6" data-animate>
+            <form class="space-y-4">
+              <div class="grid gap-4 sm:grid-cols-2">
+                <input
+                  type="text"
+                  placeholder="Full name"
+                  class="px-4 py-3 rounded-full border border-slate-200"
+                />
+                <input
+                  type="email"
+                  placeholder="Email address"
+                  class="px-4 py-3 rounded-full border border-slate-200"
+                />
+              </div>
+              <input
+                type="tel"
+                placeholder="Phone number"
+                class="w-full px-4 py-3 rounded-full border border-slate-200"
+              />
+              <input
+                type="text"
+                placeholder="City"
+                class="w-full px-4 py-3 rounded-full border border-slate-200"
+              />
+              <textarea
+                rows="4"
+                placeholder="Tell us about your smart home goals"
+                class="w-full px-4 py-3 rounded-2xl border border-slate-200"
+              ></textarea>
+              <button
+                type="submit"
+                class="w-full py-3 rounded-full bg-blue-600 text-white text-sm font-semibold"
+              >
+                Book Free Consultation
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-12 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-6 lg:grid-cols-3">
+          <div class="bg-white p-6 rounded-2xl soft-shadow" data-animate>
+            <h3 class="font-semibold">Mumbai Office</h3>
+            <p class="text-sm text-slate-600 mt-2">
+              4th Floor, Orion Tech Park, Andheri East
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl soft-shadow" data-animate>
+            <h3 class="font-semibold">Bengaluru Office</h3>
+            <p class="text-sm text-slate-600 mt-2">
+              12th Main Road, Indiranagar
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl soft-shadow" data-animate>
+            <h3 class="font-semibold">Delhi Office</h3>
+            <p class="text-sm text-slate-600 mt-2">
+              21 Connaught Place, Central Delhi
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" data-animate>
+          <h2 class="text-3xl font-semibold mb-6 text-center">
+            Service Coverage Map
+          </h2>
+          <div class="rounded-3xl overflow-hidden soft-shadow">
+            <iframe
+              title="India service area"
+              src="https://maps.google.com/maps?q=India&t=&z=4&ie=UTF8&iwloc=&output=embed"
+              class="w-full h-80 border-0"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-white border-t border-slate-100">
+      <div
+        class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid gap-6 lg:grid-cols-3 text-sm"
+      >
+        <div class="space-y-3">
+          <p class="font-semibold text-blue-600">TechNest Solutions</p>
+          <p class="text-slate-600">
+            Ready to connect? We reply within 24 hours.
+          </p>
+        </div>
+        <div class="space-y-2 text-slate-600">
+          <p class="font-semibold text-slate-700">Support</p>
+          <p>help@technest.in</p>
+          <p>+91 90000 33333</p>
+        </div>
+        <div class="space-y-2 text-slate-600">
+          <p class="font-semibold text-slate-700">Trust</p>
+          <p>Certified Installers</p>
+          <p>Secure Setup</p>
+          <p>Guaranteed Warranty</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/main.js"></script>
+  </body>
+</html>
