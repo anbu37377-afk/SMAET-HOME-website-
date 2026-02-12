@@ -19,9 +19,12 @@
       >
         <div class="flex items-center gap-3">
           <button
+            type="button"
             class="lg:hidden rounded-full border border-slate-200 p-2"
             data-nav-toggle
             aria-label="Open dashboard menu"
+            aria-controls="dashboard-mobile-nav"
+            aria-expanded="false"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +64,8 @@
         </div>
       </div>
       <div
-        class="lg:hidden hidden fixed inset-y-0 left-0 w-72 bg-white shadow-xl border-r border-slate-100 z-50 p-6"
+        id="dashboard-mobile-nav"
+        class="lg:hidden hidden fixed inset-y-0 left-0 w-[82vw] sm:w-80 md:w-96 max-w-[24rem] bg-white shadow-xl border-r border-slate-100 z-50 p-6 overflow-y-auto"
         data-mobile-nav
       >
         <div class="flex items-center justify-between">
@@ -69,24 +73,45 @@
             <span class="text-lg font-semibold text-blue-600">TechNest</span>
             <span class="text-xs text-slate-500">Solutions</span>
           </a>
-          <button
-            class="text-slate-500"
+                    <button
+            type="button"
+            class="rounded-full border border-slate-200 p-2 text-slate-600 hover:border-blue-600 hover:text-blue-600 transition focus:outline-none focus:ring-2 focus:ring-blue-200"
             data-nav-toggle
             aria-label="Close menu"
+            aria-controls="dashboard-mobile-nav"
+            aria-expanded="false"
           >
-            ✕
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.8"
+                d="M6 6l12 12M6 18L18 6"
+              />
+            </svg>
           </button>
         </div>
         <nav class="mt-8 space-y-4 text-sm font-medium text-slate-600">
-          <a href="dashboard.html#overview" class="text-blue-600">Overview</a>
-          <a href="dashboard.html#installations">Installations</a>
-          <a href="dashboard.html#requests">Service Requests</a>
-          <a href="dashboard.html#scenes">Automation Scenes</a>
-          <a href="dashboard.html#team">Team Assignments</a>
-          <a href="dashboard.html#analytics">Analytics</a>
-          <a href="dashboard.html#admin">Admin Panel</a>
+          <a href="dashboard.html#overview" class="block text-blue-600">Overview</a>
+          <a href="dashboard.html#installations" class="block">Installations</a>
+          <a href="dashboard.html#requests" class="block">Service Requests</a>
+          <a href="dashboard.html#scenes" class="block">Automation Scenes</a>
+          <a href="dashboard.html#team" class="block">Team Assignments</a>
+          <a href="dashboard.html#analytics" class="block">Analytics</a>
+          <a href="dashboard.html#admin" class="block">Admin Panel</a>
         </nav>
       </div>
+      <div
+        class="lg:hidden hidden fixed inset-0 bg-slate-900/20 z-40"
+        data-mobile-nav-backdrop
+      ></div>
     </header>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-10">
@@ -279,3 +304,4 @@
     <script src="assets/main.js"></script>
   </body>
 </html>
+

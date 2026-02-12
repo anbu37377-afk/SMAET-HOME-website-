@@ -140,17 +140,41 @@
                 class="w-full px-4 py-3 rounded-full border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-200"
               />
             </div>
-            <div class="flex flex-wrap gap-3 text-sm font-medium text-slate-600">
-              <button class="px-4 py-2 rounded-full border">All</button>
-              <button class="px-4 py-2 rounded-full border">Installation</button>
-              <button class="px-4 py-2 rounded-full border">Security</button>
-              <button class="px-4 py-2 rounded-full border">Lighting</button>
+            <div class="flex flex-wrap gap-3 text-sm font-medium" data-blog-filters>
+              <button
+                class="px-4 py-2 rounded-full border border-slate-900 text-slate-900 shadow-sm transition"
+                data-blog-filter="all"
+                aria-pressed="true"
+              >
+                All
+              </button>
+              <button
+                class="px-4 py-2 rounded-full border border-slate-200 text-slate-600 hover:border-slate-300 transition"
+                data-blog-filter="installation"
+                aria-pressed="false"
+              >
+                Installation
+              </button>
+              <button
+                class="px-4 py-2 rounded-full border border-slate-200 text-slate-600 hover:border-slate-300 transition"
+                data-blog-filter="security"
+                aria-pressed="false"
+              >
+                Security
+              </button>
+              <button
+                class="px-4 py-2 rounded-full border border-slate-200 text-slate-600 hover:border-slate-300 transition"
+                data-blog-filter="lighting"
+                aria-pressed="false"
+              >
+                Lighting
+              </button>
             </div>
           </div>
           <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <a
               href="blog-details.html"
-              class="bg-white rounded-2xl soft-shadow overflow-hidden mx-auto"
+              class="block w-full bg-white rounded-2xl soft-shadow overflow-hidden mx-auto"
               data-animate
             >
               <img
@@ -171,11 +195,11 @@
             </a>
             <a
               href="blog-details.html"
-              class="bg-white rounded-2xl soft-shadow overflow-hidden mx-auto"
+              class="block w-full bg-white rounded-2xl soft-shadow overflow-hidden mx-auto"
               data-animate
             >
               <img
-                src="https://images.unsplash.com/photo-1505798577917-a65157d3320f?auto=format&fit=crop&w=900&q=80"
+                src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=900&q=80"
                 alt="Lighting automation"
                 class="h-44 w-full object-cover"
               />
@@ -192,7 +216,7 @@
             </a>
             <a
               href="blog-details.html"
-              class="bg-white rounded-2xl soft-shadow overflow-hidden mx-auto"
+              class="block w-full bg-white rounded-2xl soft-shadow overflow-hidden mx-auto"
               data-animate
             >
               <img

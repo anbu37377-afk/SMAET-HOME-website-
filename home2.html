@@ -15,13 +15,18 @@
   <body class="text-slate-900">
     <header class="bg-white/90 backdrop-blur lg:sticky lg:top-0 z-40">
       <div
-        class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between"
+        class="max-w-6xl mx-auto pl-2 pr-4 sm:px-6 lg:px-8 py-4 flex items-center gap-3"
       >
-        <a href="index.html" class="flex items-center gap-2">
+        <a href="index.html" class="flex items-center gap-2 shrink-0 -ml-1 sm:ml-0">
+          <img
+            src="assets/favicon.svg"
+            alt="TechNest logo"
+            class="h-9 w-9 rounded-lg shrink-0"
+          />
           <span class="text-xl font-semibold text-blue-600">TechNest</span>
           <span class="text-sm text-slate-500">Solutions</span>
         </a>
-        <nav class="hidden lg:flex items-center gap-8 text-sm font-medium">
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-medium ml-8">
           <a href="index.html" class="text-slate-600 hover:text-blue-600"
             >Home</a
           >
@@ -55,7 +60,7 @@
             >Register</a
           >
         </nav>
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-3 ml-auto">
           <button
             class="rounded-full border border-slate-200 p-2 text-slate-600 hover:border-blue-600 hover:text-blue-600 transition"
             data-theme-toggle
@@ -140,7 +145,7 @@
               class="w-full h-[480px] object-cover"
             />
             <button
-              class="absolute top-20 left-16 bg-white/90 text-sm font-semibold px-4 py-2 rounded-full shadow"
+              class="absolute top-14 left-1/2 -translate-x-1/2 sm:top-20 sm:left-16 sm:translate-x-0 bg-white/90 text-xs sm:text-sm font-semibold px-4 py-2 rounded-full shadow whitespace-nowrap"
               data-diagram-zone
               data-title="Living Room"
               data-devices="Smart lighting, ambient sensors, voice hubs"
@@ -150,7 +155,7 @@
               Living Room
             </button>
             <button
-              class="absolute top-40 right-12 bg-white/90 text-sm font-semibold px-4 py-2 rounded-full shadow"
+              class="absolute top-[42%] left-1/2 -translate-x-1/2 sm:top-40 sm:right-12 sm:left-auto sm:translate-x-0 bg-white/90 text-xs sm:text-sm font-semibold px-4 py-2 rounded-full shadow whitespace-nowrap"
               data-diagram-zone
               data-title="Bedroom"
               data-devices="Climate control, sleep automation"
@@ -160,7 +165,7 @@
               Bedroom
             </button>
             <button
-              class="absolute bottom-32 left-24 bg-white/90 text-sm font-semibold px-4 py-2 rounded-full shadow"
+              class="absolute bottom-32 left-1/2 -translate-x-1/2 sm:bottom-32 sm:left-24 sm:translate-x-0 bg-white/90 text-xs sm:text-sm font-semibold px-4 py-2 rounded-full shadow whitespace-nowrap"
               data-diagram-zone
               data-title="Kitchen"
               data-devices="Smart switches, safety sensors"
@@ -170,7 +175,7 @@
               Kitchen
             </button>
             <button
-              class="absolute bottom-20 right-16 bg-white/90 text-sm font-semibold px-4 py-2 rounded-full shadow"
+              class="absolute bottom-16 left-1/2 -translate-x-1/2 sm:bottom-20 sm:right-16 sm:left-auto sm:translate-x-0 bg-white/90 text-xs sm:text-sm font-semibold px-4 py-2 rounded-full shadow whitespace-nowrap"
               data-diagram-zone
               data-title="Security Area"
               data-devices="Cameras, smart locks, entry sensors"
@@ -302,24 +307,139 @@
     </div>
 
     <footer class="bg-white border-t border-slate-100">
-      <div
-        class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid gap-6 lg:grid-cols-3 text-sm"
-      >
-        <div class="space-y-3">
-          <p class="font-semibold text-blue-600">TechNest Solutions</p>
-          <p class="text-slate-600">
-            Premium smart home installations with intuitive automation.
-          </p>
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4 text-sm">
+          <div class="space-y-4">
+            <a href="index.html" class="inline-flex items-center gap-2">
+              <img
+                src="assets/favicon.svg"
+                alt="TechNest logo"
+                class="h-8 w-8 rounded-md shrink-0"
+              />
+              <span class="text-base font-semibold text-blue-600">TechNest</span>
+              <span class="text-sm text-slate-500">Solutions</span>
+            </a>
+            <p class="text-slate-600">
+              Premium smart home installations with intuitive automation.
+            </p>
+            <div class="flex items-center gap-3">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                class="h-9 w-9 rounded-full border border-slate-200 inline-flex items-center justify-center text-slate-500 hover:text-blue-600 hover:border-blue-600 transition"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="h-4 w-4"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M13.5 21v-7h2.3l.4-2.7h-2.7V9.6c0-.8.2-1.3 1.3-1.3h1.5V5.9c-.3 0-1.1-.1-2.1-.1-2.1 0-3.5 1.3-3.5 3.6v1.9H8.5V14h2.2v7h2.8z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                class="h-9 w-9 rounded-full border border-slate-200 inline-flex items-center justify-center text-slate-500 hover:text-blue-600 hover:border-blue-600 transition"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="h-4 w-4"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M7.8 3h8.4A4.8 4.8 0 0 1 21 7.8v8.4a4.8 4.8 0 0 1-4.8 4.8H7.8A4.8 4.8 0 0 1 3 16.2V7.8A4.8 4.8 0 0 1 7.8 3zm0 1.8a3 3 0 0 0-3 3v8.4a3 3 0 0 0 3 3h8.4a3 3 0 0 0 3-3V7.8a3 3 0 0 0-3-3H7.8zm8.8 1.4a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2zM12 7.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 1.8A2.7 2.7 0 1 0 14.7 12 2.7 2.7 0 0 0 12 9.3z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://x.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X"
+                class="h-9 w-9 rounded-full border border-slate-200 inline-flex items-center justify-center text-slate-500 hover:text-blue-600 hover:border-blue-600 transition"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="h-4 w-4"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M18.9 3H22l-6.8 7.8 8 10.2h-6.3L12 14.6 6.4 21H3.2l7.3-8.3L2.8 3h6.4l4.3 5.8L18.9 3zm-1.1 16.2h1.7L8.3 4.7H6.5l11.3 14.5z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                class="h-9 w-9 rounded-full border border-slate-200 inline-flex items-center justify-center text-slate-500 hover:text-blue-600 hover:border-blue-600 transition"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="h-4 w-4"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M6.5 8.7H3.8V20h2.7V8.7zM5.1 4a1.6 1.6 0 1 0 0 3.2A1.6 1.6 0 0 0 5.1 4zM20.2 13.4c0-3.2-1.7-4.8-4-4.8-1.8 0-2.6 1-3 1.8v-1.6h-2.7V20h2.7v-5.6c0-1.5.3-3 2.1-3s2.1 1.6 2.1 3.1V20h2.8v-6.6z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="space-y-2 text-slate-600">
+            <p class="font-semibold text-slate-700">Quick Links</p>
+            <a href="index.html" class="block hover:text-blue-600 transition">Home</a>
+            <a href="home2.html" class="block hover:text-blue-600 transition"
+              >Home 2</a
+            >
+            <a href="services.html" class="block hover:text-blue-600 transition"
+              >Services</a
+            >
+            <a href="blog.html" class="block hover:text-blue-600 transition">Blog</a>
+            <a href="contact.html" class="block hover:text-blue-600 transition"
+              >Contact</a
+            >
+          </div>
+
+          <div class="space-y-2 text-slate-600">
+            <p class="font-semibold text-slate-700">Support</p>
+            <p>Mon-Sun: 9 AM - 9 PM</p>
+            <p>SmartCare 24/7 hotline</p>
+            <p>Professional remote troubleshooting</p>
+          </div>
+
+          <div class="space-y-2 text-slate-600">
+            <p class="font-semibold text-slate-700">Contact</p>
+            <p>solutions@technest.in</p>
+            <p>+91 90000 56789</p>
+            <p>WhatsApp Support 24/7</p>
+          </div>
         </div>
-        <div class="space-y-2 text-slate-600">
-          <p class="font-semibold text-slate-700">Support</p>
-          <p>Mon-Sun: 9 AM - 9 PM</p>
-          <p>SmartCare 24/7 hotline</p>
-        </div>
-        <div class="space-y-2 text-slate-600">
-          <p class="font-semibold text-slate-700">Contact</p>
-          <p>solutions@technest.in</p>
-          <p>+91 90000 56789</p>
+
+        <div
+          class="mt-8 pt-4 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs text-slate-500"
+        >
+          <p>© 2026 TechNest Solutions. All rights reserved.</p>
+          <div class="flex items-center gap-4">
+            <a href="#" class="hover:text-blue-600 transition">Terms of Service</a>
+            <a href="#" class="hover:text-blue-600 transition">Privacy Policy</a>
+          </div>
         </div>
       </div>
     </footer>
