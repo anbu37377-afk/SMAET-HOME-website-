@@ -186,18 +186,20 @@
     <section class="py-16 sm:py-20 bg-slate-50">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="space-y-8" data-carousel>
-          <div class="flex items-center justify-between" data-animate>
-            <div>
-              <h2 class="text-3xl font-semibold">Customer Testimonials</h2>
-              <p class="text-slate-600">
-                Trusted by homeowners across India.
-              </p>
-            </div>
-            <div class="hidden md:flex gap-3">
-              <button class="h-10 w-10 rounded-full border border-slate-200 text-slate-500" data-carousel-prev>
+          <div class="relative flex flex-col items-center justify-center text-center" data-animate>
+            <h2 class="text-3xl font-semibold">Customer Testimonials</h2>
+            <p class="text-slate-600">
+              Trusted by homeowners across India.
+            </p>
+            <div class="hidden md:flex gap-3 absolute right-0 top-1/2 -translate-y-1/2">
+              <button
+                class="h-10 w-10 rounded-full border border-slate-200 text-slate-500 hover:border-blue-600 hover:text-blue-600 transition-colors"
+                data-carousel-prev>
                 ←
               </button>
-              <button class="h-10 w-10 rounded-full border border-slate-200 text-slate-500" data-carousel-next>
+              <button
+                class="h-10 w-10 rounded-full border border-slate-200 text-slate-500 hover:border-blue-600 hover:text-blue-600 transition-colors"
+                data-carousel-next>
                 →
               </button>
             </div>
